@@ -1,9 +1,32 @@
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import fs from 'fs';
+import path from 'path';
+
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Cargar variables de entorno
-dotenv.config();
+const projectRoot = path.resolve(__dirname, '../../');
+const envLocalPath = path.join(projectRoot, '.env.local');
+const envPath = path.join(projectRoot, '.env');
+
+if (!fs.existsSync(envPath)) {
+  console.warn(`Archivo .env no encontrado en ${envPath}`);
+} else {
+  console.log(`Cargando archivo .env desde ${envPath}`);
+}
+
+if (!fs.existsSync(envLocalPath)) {
+  console.warn(`Archivo .env.local no encontrado en ${envLocalPath}`);
+} else {
+  console.log(`Cargando archivo .env.local desde ${envLocalPath}`);
+}
+
+dotenv.config({ path: envPath });
+dotenv.config({ path: envLocalPath, override: true });
 
 // Configuración
 const TOKEN = process.env.GITHUB_TOKEN;
@@ -203,8 +226,9 @@ async function evaluateAllBranches() {
     }
   }
 
-  fs.writeFileSync("evaluation_results.json", JSON.stringify(results, null, 2));
-  console.log("Resultados guardados en evaluation_results.json");
+  const outputPath = path.join(__dirname, "evaluation_results.json");
+  fs.writeFileSync(outputPath, JSON.stringify(results, null, 2));
+  console.log(`Resultados guardados en ${outputPath}`);
 }
 
 // Ejecutar evaluación directamente desde la terminal
