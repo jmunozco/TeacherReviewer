@@ -73,6 +73,10 @@ async function fetchFileContent(branch, filePath) {
     const response = await fetch(url, options);
     if (response.ok) {
       const data = await response.json();
+      if (!data.content) {
+        console.warn(`El archivo ${filePath} no contiene contenido legible.`);
+        return null;
+      }
       return Buffer.from(data.content, "base64").toString("utf-8");
     } else {
       console.warn(`No se pudo obtener el contenido del archivo ${filePath}: ${response.statusText}`);
@@ -136,7 +140,11 @@ async function evaluateBranch(branch) {
   // Evaluar uso de ProcessBuilder
   for (const file of results.fileList) {
     const content = await fetchFileContent(branch, file.path);
-    if (content && content.includes("ProcessBuilder")) {
+    if (!content) {
+      results.comments.push(`El archivo ${file.name} no pudo ser evaluado debido a un contenido vacío o no válido.`);
+      continue;
+    }
+    if (content.includes("ProcessBuilder")) {
       results.points.processBuilder = 2;
       results.comments.push(`Se detectó el uso de ProcessBuilder en el archivo ${file.name}.`);
       break;
@@ -146,7 +154,11 @@ async function evaluateBranch(branch) {
   // Evaluar flujos de comunicación I/O
   for (const file of results.fileList) {
     const content = await fetchFileContent(branch, file.path);
-    if (content && (await analyzeIOStreams(content))) {
+    if (!content) {
+      results.comments.push(`El archivo ${file.name} no pudo ser evaluado debido a un contenido vacío o no válido.`);
+      continue;
+    }
+    if (await analyzeIOStreams(content)) {
       results.points.ioStreams = 2;
       results.comments.push(`Se detectaron flujos de comunicación I/O correctamente implementados en el archivo ${file.name}.`);
       break;
