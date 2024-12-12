@@ -1,0 +1,2168 @@
+{
+  "detailed": [
+    {
+      "branch": "feature/ev1AdameBarrigaAlejandro",
+      "scores": {
+        "traditional": {
+          "filePresent": true,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Configuración correcta del ExecutorService."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Implementación correcta de tareas personalizadas."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Uso de hilos tradicionales y virtuales."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Salida en consola completa y clara."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Gráfico comparativo y análisis."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Documentación clara en README.md."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Estructura y organización del código."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Entrega organizada en GitHub."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": true,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Configuración correcta del ExecutorService."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Implementación correcta de tareas personalizadas."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Uso de hilos tradicionales y virtuales."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Salida en consola completa y clara."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Gráfico comparativo y análisis."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Documentación clara en README.md."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Estructura y organización del código."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Entrega organizada en GitHub."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "10.0",
+        "virtual": "10.0",
+        "project": "10.0"
+      }
+    },
+    {
+      "branch": "feature/ev1BermejoAlvarezAlejandro",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1BlancoParraGabriel",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1CalvoVidalPablo",
+      "scores": {},
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1CanoRicardo",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1CotrinaBecerraDavid",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": true,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Configuración correcta del ExecutorService."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Implementación correcta de tareas personalizadas."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Uso de hilos tradicionales y virtuales."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Salida en consola completa y clara."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Gráfico comparativo y análisis."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Documentación clara en README.md."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Estructura y organización del código."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Entrega organizada en GitHub."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "10.0",
+        "project": "8.0"
+      }
+    },
+    {
+      "branch": "feature/ev1FerreiraRodriguezAdrian",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1FuentesAyusoCesar",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1GalvanFernandezAlejandro",
+      "scores": {},
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1GalvanFernandezBlas",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1GomezdevillarBanderasEva",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1GonzalezSeguraSoledadMaria",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": true,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Configuración correcta del ExecutorService."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Implementación correcta de tareas personalizadas."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Uso de hilos tradicionales y virtuales."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Salida en consola completa y clara."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Gráfico comparativo y análisis."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Documentación clara en README.md."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Estructura y organización del código."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Entrega organizada en GitHub."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "10.0",
+        "project": "8.0"
+      }
+    },
+    {
+      "branch": "feature/ev1GutierrezGines",
+      "scores": {},
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1GutierrezRamiroNacho",
+      "scores": {},
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1LeonGomezMario",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1LopezSantosAlejandro",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1LozanoLuis",
+      "scores": {},
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1MarquezFabianPedroJavier",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1MartinezDiazDavid",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1MurilloCarreraJorge",
+      "scores": {},
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1PomberoDuarteManuel",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1PrietoHernandezAdrianLuis",
+      "scores": {
+        "traditional": {
+          "filePresent": true,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Configuración correcta del ExecutorService."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Implementación correcta de tareas personalizadas."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Uso de hilos tradicionales y virtuales."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Salida en consola completa y clara."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Gráfico comparativo y análisis."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Documentación clara en README.md."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Estructura y organización del código."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Entrega organizada en GitHub."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": true,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Configuración correcta del ExecutorService."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Implementación correcta de tareas personalizadas."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Uso de hilos tradicionales y virtuales."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Salida en consola completa y clara."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Gráfico comparativo y análisis."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Documentación clara en README.md."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Estructura y organización del código."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 7,
+              "maxPoints": 10,
+              "feedback": "Cumple parcialmente con: Entrega organizada en GitHub."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "10.0",
+        "virtual": "10.0",
+        "project": "10.0"
+      }
+    },
+    {
+      "branch": "feature/ev1RodriguezLopezAngel",
+      "scores": {
+        "traditional": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        },
+        "virtual": {
+          "filePresent": false,
+          "feedback": [
+            {
+              "criterion": "Configuración correcta del ExecutorService",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Configuración correcta del ExecutorService. Se espera configurar un ExecutorService con un pool de hilos y enviar tareas utilizando submit()."
+            },
+            {
+              "criterion": "Implementación correcta de tareas personalizadas",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Implementación correcta de tareas personalizadas. Cada tarea debe implementar un cálculo personalizado basado en la matrícula, con tiempos de espera adecuados."
+            },
+            {
+              "criterion": "Uso de hilos tradicionales y virtuales",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Uso de hilos tradicionales y virtuales. Implementar versiones con hilos tradicionales y virtuales en clases separadas."
+            },
+            {
+              "criterion": "Salida en consola completa y clara",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Salida en consola completa y clara. Se espera salida en consola con el ID del hilo, tipo de cálculo realizado y tiempo de ejecución."
+            },
+            {
+              "criterion": "Gráfico comparativo y análisis",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Gráfico comparativo y análisis. El gráfico debe mostrar el tiempo de respuesta de ambas versiones, acompañado de un análisis textual."
+            },
+            {
+              "criterion": "Documentación clara en README.md",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Documentación clara en README.md. El README.md debe incluir un gráfico comparativo, capturas de consola y una explicación del análisis."
+            },
+            {
+              "criterion": "Estructura y organización del código",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Estructura y organización del código. El código debe estar organizado en clases bien nombradas, con comentarios claros y buena estructura."
+            },
+            {
+              "criterion": "Entrega organizada en GitHub",
+              "score": 3,
+              "maxPoints": 10,
+              "feedback": "Falta: Entrega organizada en GitHub. El proyecto debe estar en una rama nombrada correctamente, con el código y documentación en las ubicaciones esperadas."
+            }
+          ]
+        }
+      },
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "branch": "feature/ev1AdameBarrigaAlejandro",
+      "grades": {
+        "traditional": "10.0",
+        "virtual": "10.0",
+        "project": "10.0"
+      }
+    },
+    {
+      "branch": "feature/ev1BermejoAlvarezAlejandro",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1BlancoParraGabriel",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1CalvoVidalPablo",
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1CanoRicardo",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1CotrinaBecerraDavid",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "10.0",
+        "project": "8.0"
+      }
+    },
+    {
+      "branch": "feature/ev1FerreiraRodriguezAdrian",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1FuentesAyusoCesar",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1GalvanFernandezAlejandro",
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1GalvanFernandezBlas",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1GomezdevillarBanderasEva",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1GonzalezSeguraSoledadMaria",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "10.0",
+        "project": "8.0"
+      }
+    },
+    {
+      "branch": "feature/ev1GutierrezGines",
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1GutierrezRamiroNacho",
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1LeonGomezMario",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1LopezSantosAlejandro",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1LozanoLuis",
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1MarquezFabianPedroJavier",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1MartinezDiazDavid",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1MurilloCarreraJorge",
+      "grades": {}
+    },
+    {
+      "branch": "feature/ev1PomberoDuarteManuel",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    },
+    {
+      "branch": "feature/ev1PrietoHernandezAdrianLuis",
+      "grades": {
+        "traditional": "10.0",
+        "virtual": "10.0",
+        "project": "10.0"
+      }
+    },
+    {
+      "branch": "feature/ev1RodriguezLopezAngel",
+      "grades": {
+        "traditional": "6.0",
+        "virtual": "6.0",
+        "project": "6.0"
+      }
+    }
+  ]
+}

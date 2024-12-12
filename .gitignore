@@ -1,4 +1,4 @@
 .env.local
 node_modules/
 package-lock.json
-**/evaluation_results.json.env
+**/evaluation_results.json
