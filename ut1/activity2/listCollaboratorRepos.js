@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import fetch from "node-fetch";
 import { DateTime } from "luxon";
 
