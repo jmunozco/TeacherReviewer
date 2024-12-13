@@ -56,7 +56,6 @@ async function fetchBranches() {
 let totalValidWorks = 0; // Contador global para los trabajos encontrados
 const BASE_PATHS = [
   `src/com/mymodule/serviceprocessprogramming/ut2_multiprocess_programming/project/ex1`,
-  `src/com/mymodule/serviceprocessprogramming/ut2_multiprocess_programming/project/ex2`
 ];
 
 async function fetchFiles(branch, path) {
