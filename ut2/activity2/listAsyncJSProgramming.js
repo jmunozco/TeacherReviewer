@@ -35,7 +35,7 @@ const REPO_NAME = process.env.REPO_NAME?.replace(/"|;/g, '').trim();
 
 console.log(`Valores cargados: TOKEN=${TOKEN}, REPO_OWNER=${REPO_OWNER}, REPO_NAME=${REPO_NAME}`);
 
-const BASE_PATH = 'src';
+const BASE_PATH = 'src/com/mymodule/serviceprocessprogramming/ut2_multiprocess_programming/project/ex2';
 
 async function fetchBranches() {
   const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/branches`;
@@ -60,7 +60,7 @@ async function fetchBranches() {
   }
 }
 
-async function listBranchContents(branch, path = '') {
+async function listBranchContents(branch, path) {
   const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${branch}`;
   const options = {
     method: "GET",
@@ -112,44 +112,75 @@ async function fetchFileContent(branch, filePath) {
   return null;
 }
 
-async function evaluateFileContent(content) {
+async function evaluateFileContent(content, fileName) {
   const CRITERIA = [
     {
       name: 'Uso correcto de async/await',
-      weight: 2,
-      validate: (content) => content.includes('async') && content.includes('await'),
-      feedback: 'El código hace uso de async/await correctamente.'
+      weight: 2.5,
+      validate: (content) => {
+        const hasAsyncAwait = content.includes('async') && content.includes('await');
+        const hasThenCatch = content.includes('.then') && content.includes('.catch');
+        if (hasAsyncAwait) return 2.5;
+        if (hasThenCatch) return 1.5;
+        return 0;
+      },
+      feedback: 'El código hace uso de async/await o .then/.catch correctamente.'
     },
     {
       name: 'Gestión de errores con try/catch',
-      weight: 1.5,
-      validate: (content) => content.includes('try') && content.includes('catch'),
-      feedback: 'Se detecta una adecuada gestión de errores con try/catch.'
+      weight: 2,
+      validate: (content) => {
+        const hasTryCatch = content.includes('try') && content.includes('catch');
+        const hasCatchOnly = content.includes('.catch');
+        if (hasTryCatch) return 2;
+        if (hasCatchOnly) return 1;
+        return 0;
+      },
+      feedback: 'Se detecta una adecuada gestión de errores con try/catch o .catch.'
     },
     {
       name: 'Uso de Axios',
       weight: 2,
-      validate: (content) => content.includes('axios'),
+      validate: (content) => {
+        const hasAxios = content.includes('axios');
+        return hasAxios ? 2 : 0;
+      },
       feedback: 'El código utiliza Axios correctamente para solicitudes HTTP.'
     },
     {
       name: 'Organización del código y comentarios',
-      weight: 1.3,
-      validate: (content) => content.includes('//') || content.includes('/*'),
+      weight: 1.5,
+      validate: (content) => {
+        const hasComments = content.includes('//') || content.includes('/*');
+        const wellOrganized = content.includes('function') || content.includes('class');
+        if (hasComments && wellOrganized) return 1.5;
+        if (hasComments || wellOrganized) return 1;
+        return 0;
+      },
       feedback: 'El código está organizado y cuenta con comentarios explicativos.'
+    },
+    {
+      name: 'Documentación',
+      weight: 2,
+      validate: (readmeContent) => {
+        if (!readmeContent) return 0;
+        let score = 1;
+        if (readmeContent.includes('Axios')) score += 1;
+        return score;
+      },
+      feedback: 'Documentación encontrada y evaluada correctamente.'
     }
   ];
 
-  const results = { criteriaResults: [], totalScore: 0 };
+  const results = { fileName, criteriaResults: [], totalScore: 0 };
   for (const criterion of CRITERIA) {
-    const passed = criterion.validate(content);
+    const score = criterion.validate(content);
     results.criteriaResults.push({
       name: criterion.name,
-      passed,
-      feedback: passed ? criterion.feedback : `No se cumplió el criterio: ${criterion.name}`,
-      weight: passed ? criterion.weight : 0,
+      feedback: score > 0 ? criterion.feedback : `No se cumplió el criterio: ${criterion.name}`,
+      weight: score,
     });
-    results.totalScore += passed ? criterion.weight : 0;
+    results.totalScore += score;
   }
   return results;
 }
@@ -157,10 +188,12 @@ async function evaluateFileContent(content) {
 async function evaluateBranch(branch) {
   const results = {
     branch: branch,
-    criteriaResults: [],
-    totalScore: 0,
-    documentation: '',
-    functionality: ''
+    filesFound: [],
+    filesEvaluated: [],
+    fileList: [],
+    comments: new Set(),
+    points: {},
+    totalPoints: 0
   };
 
   try {
@@ -168,38 +201,63 @@ async function evaluateBranch(branch) {
     console.log(`Contenido listado en ${BASE_PATH}:`, files);
     for (const file of files) {
       if (file.type === 'file') {
+        results.filesFound.push(file.name);
+        results.fileList.push({ name: file.name, path: file.path });
         console.log(`Evaluando archivo: ${file.path}`);
         const content = await fetchFileContent(branch, file.path);
         if (content) {
-          const fileResults = await evaluateFileContent(content);
-          results.criteriaResults.push(...fileResults.criteriaResults);
-          results.totalScore += fileResults.totalScore;
+          results.filesEvaluated.push(file.name);
+          const fileResults = await evaluateFileContent(content, file.name);
+          fileResults.criteriaResults.forEach(cr => {
+            if (!results.points[cr.name] || results.points[cr.name] < cr.weight) {
+              results.comments.add(cr.feedback);
+              results.points[cr.name] = cr.weight;
+            }
+          });
+          results.totalPoints += fileResults.totalScore;
         }
       } else if (file.type === 'dir') {
         console.log(`Subcarpeta encontrada: ${file.path}`);
         const subFiles = await listBranchContents(branch, file.path);
         for (const subFile of subFiles) {
+          results.filesFound.push(subFile.name);
+          results.fileList.push({ name: subFile.name, path: subFile.path });
           const subContent = await fetchFileContent(branch, subFile.path);
           if (subContent) {
-            const subFileResults = await evaluateFileContent(subContent);
-            results.criteriaResults.push(...subFileResults.criteriaResults);
-            results.totalScore += subFileResults.totalScore;
+            results.filesEvaluated.push(subFile.name);
+            const subFileResults = await evaluateFileContent(subContent, subFile.name);
+            subFileResults.criteriaResults.forEach(cr => {
+              if (!results.points[cr.name] || results.points[cr.name] < cr.weight) {
+                results.comments.add(cr.feedback);
+                results.points[cr.name] = cr.weight;
+              }
+            });
+            results.totalPoints += subFileResults.totalScore;
+          } else {
+            results.comments.add(`No se pudo leer el archivo: ${subFile.path}`);
           }
         }
       }
     }
 
-    // Evaluar documentación
     const readmeContent = await fetchFileContent(branch, 'README.md');
     if (readmeContent) {
-      results.documentation = readmeContent.includes('Axios') ? 'Documentación menciona Axios.' : 'Documentación incompleta.';
+      results.comments.add('Documentación encontrada en README.md.');
+      const docScore = readmeContent.includes('Axios') ? 2 : 1;
+      results.comments.add(docScore > 1 ? 'Documentación menciona Axios.' : 'Documentación básica encontrada.');
+      results.points['Documentación'] = docScore;
     } else {
-      results.documentation = 'No se encontró README.md.';
+      results.comments.add('No se encontró README.md.');
     }
+
+    // Calcular el total de puntos
+    results.totalPoints = Object.values(results.points).reduce((acc, curr) => acc + curr, 0);
+
   } catch (error) {
-    results.error = `Error durante la evaluación de la rama ${branch}: ${error.message}`;
+    results.comments.add(`Error durante la evaluación de la rama ${branch}: ${error.message}`);
   }
 
+  results.comments = Array.from(results.comments);
   return results;
 }
 
