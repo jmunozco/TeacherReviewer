@@ -35,7 +35,7 @@ const REPO_NAME = process.env.REPO_NAME?.replace(/"|;/g, '').trim();
 
 console.log(`Valores cargados: TOKEN=${TOKEN}, REPO_OWNER=${REPO_OWNER}, REPO_NAME=${REPO_NAME}`);
 
-const SRC_PATH = 'src';
+const BASE_PATH = 'src';
 
 async function fetchBranches() {
   const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/branches`;
@@ -164,7 +164,8 @@ async function evaluateBranch(branch) {
   };
 
   try {
-    const files = await listBranchContents(branch, SRC_PATH);
+    const files = await listBranchContents(branch, BASE_PATH);
+    console.log(`Contenido listado en ${BASE_PATH}:`, files);
     for (const file of files) {
       if (file.type === 'file') {
         console.log(`Evaluando archivo: ${file.path}`);
@@ -173,6 +174,17 @@ async function evaluateBranch(branch) {
           const fileResults = await evaluateFileContent(content);
           results.criteriaResults.push(...fileResults.criteriaResults);
           results.totalScore += fileResults.totalScore;
+        }
+      } else if (file.type === 'dir') {
+        console.log(`Subcarpeta encontrada: ${file.path}`);
+        const subFiles = await listBranchContents(branch, file.path);
+        for (const subFile of subFiles) {
+          const subContent = await fetchFileContent(branch, subFile.path);
+          if (subContent) {
+            const subFileResults = await evaluateFileContent(subContent);
+            results.criteriaResults.push(...subFileResults.criteriaResults);
+            results.totalScore += subFileResults.totalScore;
+          }
         }
       }
     }
