@@ -33,8 +33,9 @@ const TOKEN = process.env.GITHUB_TOKEN;
 const REPO_OWNER = "jmunozco";
 const REPO_NAME = "ServiceProcessProgramming";
 
-async function fetchBranches() {
-  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/branches`;
+// Función para buscar archivos recursivamente
+async function fetchAllFiles(branch, currentPath) {
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${currentPath}?ref=${branch}`;
   const options = {
     method: "GET",
     headers: {
@@ -45,43 +46,80 @@ async function fetchBranches() {
 
   try {
     const response = await fetch(url, options);
-    if (!response.ok) throw new Error(`Error al obtener ramas: ${response.statusText}`);
-    return await response.json();
+    if (!response.ok) {
+      console.warn(`No se pudo acceder al contenido de ${url}: ${response.statusText}`);
+      return [];
+    }
+    const files = await response.json();
+    let allFiles = [];
+    for (const file of files) {
+      if (file.type === "file" && file.name === "pedidos.txt") {
+        allFiles.push(file.path);
+      } else if (file.type === "dir") {
+        const subFiles = await fetchAllFiles(branch, file.path);
+        allFiles = allFiles.concat(subFiles);
+      }
+    }
+    return allFiles;
   } catch (error) {
-    console.error("Error al obtener ramas:", error);
+    console.error(`Error al acceder a ${url}:`, error);
     return [];
   }
 }
 
-let totalValidWorks = 0; // Contador global para los trabajos encontrados
-const BASE_PATHS = [
-  `src/com/mymodule/serviceprocessprogramming/ut2_multiprocess_programming/project/ex1`,
-  `src/com/mymodule/serviceprocessprogramming/ut2_multiprocess_programming/project/ex2`
-];
-
-async function fetchFiles(branch, path) {
-  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${branch}`;
-  const options = {
-    method: "GET",
-    headers: {
-      Authorization: `token ${TOKEN}`,
-      "User-Agent": "node.js",
+// Función para evaluar ramas
+async function evaluateBranch(branch) {
+  const results = {
+    branch: branch,
+    filesFound: [],
+    comments: [],
+    points: {
+      readOrders: 0,
+      processBuilder: 0,
+      ioStreams: 0,
+      logs: 0,
+      organization: 0,
     },
+    totalPoints: 0,
   };
 
-  try {
-    const response = await fetch(url, options);
-    if (response.ok) {
-      return await response.json();
-    } else {
-      console.warn(`No se pudieron obtener archivos de la URL ${url}: ${response.statusText}`);
-    }
-  } catch (error) {
-    console.warn(`Error al obtener archivos de ${url}:`, error);
+  // Buscar pedidos.txt en cualquier subcarpeta
+  const pedidosFiles = await fetchAllFiles(branch, "");
+  if (pedidosFiles.length > 0) {
+    results.points.readOrders = 2;
+    results.comments.push(`Se encontró el archivo pedidos.txt en las siguientes ubicaciones: ${pedidosFiles.join(", ")}.`);
+  } else {
+    results.comments.push("No se encontró el archivo pedidos.txt en el repositorio.");
   }
-  return [];
+
+  // Evaluar uso de ProcessBuilder
+  if (pedidosFiles.length > 0) {
+    for (const filePath of pedidosFiles) {
+      const content = await fetchFileContent(branch, filePath);
+      if (content && content.includes("ProcessBuilder")) {
+        results.points.processBuilder = 2;
+        results.comments.push(`Se detectó el uso de ProcessBuilder en ${filePath}.`);
+        break;
+      }
+    }
+  }
+
+  // Evaluar organización y documentación
+  const readmePath = `README.md`;
+  const readmeContent = await fetchFileContent(branch, readmePath);
+  if (readmeContent) {
+    results.points.organization = 1.7;
+    results.comments.push("El archivo README.md está presente y documenta el proyecto.");
+  } else {
+    results.comments.push("No se encontró el archivo README.md.");
+  }
+
+  results.totalPoints = Object.values(results.points).reduce((sum, val) => sum + val, 0);
+
+  return results;
 }
 
+// Función para obtener contenido de un archivo
 async function fetchFileContent(branch, filePath) {
   const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}?ref=${branch}`;
   const options = {
@@ -110,106 +148,28 @@ async function fetchFileContent(branch, filePath) {
   return null;
 }
 
-async function analyzeIOStreams(content) {
-  // Comprobar si las palabras clave necesarias están presentes
-  const hasInputStreams = content.includes("BufferedReader") || content.includes("InputStreamReader");
-  const hasOutputStreams = content.includes("BufferedWriter") || content.includes("OutputStreamWriter");
-
-  // Verificar si están usados correctamente en un contexto funcional
-  const isInputUsed = content.match(/BufferedReader\s*\(.*?\)/) || content.match(/InputStreamReader\s*\(.*?\)/);
-  const isOutputUsed = content.match(/BufferedWriter\s*\(.*?\)/) || content.match(/OutputStreamWriter\s*\(.*?\)/);
-
-  return hasInputStreams && hasOutputStreams && isInputUsed && isOutputUsed;
-}
-
-async function evaluateBranch(branch) {
-  const results = {
-    branch: branch,
-    filesFound: [],
-    fileList: [],
-    comments: [],
-    points: {
-      readOrders: 0,
-      processBuilder: 0,
-      ioStreams: 0,
-      logs: 0,
-      organization: 0,
+// Función para obtener todas las ramas
+async function fetchBranches() {
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/branches`;
+  const options = {
+    method: "GET",
+    headers: {
+      Authorization: `token ${TOKEN}`,
+      "User-Agent": "node.js",
     },
-    totalPoints: 0,
   };
 
-  for (const path of BASE_PATHS) {
-    const files = await fetchFiles(branch, path);
-    if (files.length > 0) {
-      results.filesFound = files.map((f) => f.name);
-      results.fileList = files.map((f) => ({ name: f.name, path: f.path }));
-      break;
-    }
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) throw new Error(`Error al obtener ramas: ${response.statusText}`);
+    return await response.json();
+  } catch (error) {
+    console.error("Error al obtener ramas:", error);
+    return [];
   }
-
-  if (results.filesFound.length === 0) {
-    results.comments.push("No se encontraron archivos en las ubicaciones especificadas. Asegúrate de seguir las instrucciones de entrega correctamente.");
-    return results;
-  }
-
-  // Evaluar lectura de pedidos.txt
-  if (results.filesFound.includes("pedidos.txt")) {
-    results.points.readOrders = 2;
-    results.comments.push("Se encontró el archivo pedidos.txt y parece estar correctamente leído.");
-  } else {
-    results.comments.push("No se encontró el archivo pedidos.txt.");
-  }
-
-  // Evaluar uso de ProcessBuilder
-  for (const file of results.fileList) {
-    const content = await fetchFileContent(branch, file.path);
-    if (!content) {
-      results.comments.push(`El archivo ${file.name} no pudo ser evaluado debido a un contenido vacío o no válido.`);
-      continue;
-    }
-    if (content.includes("ProcessBuilder")) {
-      results.points.processBuilder = 2;
-      results.comments.push(`Se detectó el uso de ProcessBuilder en el archivo ${file.name}.`);
-      break;
-    }
-  }
-
-  // Evaluar flujos de comunicación I/O
-  for (const file of results.fileList) {
-    const content = await fetchFileContent(branch, file.path);
-    if (!content) {
-      results.comments.push(`El archivo ${file.name} no pudo ser evaluado debido a un contenido vacío o no válido.`);
-      continue;
-    }
-    if (await analyzeIOStreams(content)) {
-      results.points.ioStreams = 2;
-      results.comments.push(`Se detectaron flujos de comunicación I/O correctamente implementados en el archivo ${file.name}.`);
-      break;
-    }
-  }
-
-  // Evaluar generación de logs
-  const logFiles = results.filesFound.filter((f) => f.startsWith("log_pedido_"));
-  if (logFiles.length > 0) {
-    results.points.logs = Math.min(2, logFiles.length * 0.5);
-    results.comments.push(`Se generaron ${logFiles.length} archivos de log.`);
-  } else {
-    results.comments.push("No se encontraron archivos de log.");
-  }
-
-  // Evaluar organización y documentación
-  if (results.filesFound.includes("README.md")) {
-    results.points.organization = 1.7;
-    results.comments.push("El archivo README.md está presente y documenta el proyecto.");
-  } else {
-    results.comments.push("No se encontró el archivo README.md.");
-  }
-
-  results.totalPoints = Object.values(results.points).reduce((sum, val) => sum + val, 0);
-
-  return results;
 }
 
+// Función principal para evaluar todas las ramas
 async function evaluateAllBranches() {
   const branches = await fetchBranches();
   const results = [];
@@ -226,7 +186,7 @@ async function evaluateAllBranches() {
     }
   }
 
-  const outputPath = path.join(__dirname, "evaluation_results.json");
+  const outputPath = path.join(__dirname, "activity1_evaluation_results.json");
   fs.writeFileSync(outputPath, JSON.stringify(results, null, 2));
   console.log(`Resultados guardados en ${outputPath}`);
 }
